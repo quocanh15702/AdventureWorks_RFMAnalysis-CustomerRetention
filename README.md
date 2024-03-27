@@ -62,7 +62,7 @@ Using Database AdventureWorksDW2020, write a query that'll query Rentention Coho
     	[12]
     )) AS pvt 
     WHERE FirstPurchaseMonth BETWEEN '2020-01' AND '2021-01'
-    ORDER BY FirstPurchaseMonth ;
+    ORDER BY FirstPurchaseMonth;
 
 **Result :**
 
