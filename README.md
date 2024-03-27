@@ -79,7 +79,8 @@ Potential churn
 Lost
 
 **My querry :**
-    
+
+    USE AdventureWorksDW2020
     WITH CustSeg AS (
     SELECT
     	CustomerKey, 
