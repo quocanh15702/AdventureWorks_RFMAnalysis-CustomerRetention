@@ -1,10 +1,10 @@
 # SQL Case Study
-Based on the AdventureWorks2020 database, I have performed 2 popular case studies: RFM analysis, Customer Retention Analysis. 
+Based on the AdventureWorks2020 database, I have performed 2 popular case studies: RFM Analysis, Customer Retention Analysis. 
 
 ### Case study 1: Retention Corhot Analysis
-Using Database AdventureWorksDW2020, write a query that'll query Rentention Cohort Analysis based on First time Customer Purchase in the period of Jan 2020 to Jan 2021.
+Using Database AdventureWorksDW2020, write a query that'll query Retention Cohort Analysis based on First time Customer Purchase in the period of Jan 2020 to Jan 2021.
 
-**My querry :**
+**SQL Statements:**
 
     USE AdventureWorksDW2020
     WITH OrderList AS (
@@ -64,7 +64,7 @@ Using Database AdventureWorksDW2020, write a query that'll query Rentention Coho
     WHERE FirstPurchaseMonth BETWEEN '2020-01' AND '2021-01'
     ORDER BY FirstPurchaseMonth;
 
-**Result :**
+**Result:**
 
 ![image](https://github.com/quocanh15702/AdventureWorks_RFMAnalysis-CustomerRetention/assets/153212592/c955e7b1-3a8f-45b9-a2a8-1e46ab2ab715)
 
@@ -78,7 +78,7 @@ New customers
 Potential churn
 Lost
 
-**My querry :**
+**SQL Statements:**
 
     USE AdventureWorksDW2020
     WITH CustSeg AS (
@@ -124,6 +124,6 @@ Lost
     FROM #CustSegment
     GROUP BY CustomerSegmentation
     ORDER BY CustomerSegmentation;
-**Result :**
+**Result:**
 
 ![image](https://github.com/quocanh15702/AdventureWorks_RFMAnalysis-CustomerRetention/assets/153212592/7010d367-f8ae-4854-b424-90fca96c9b97)
